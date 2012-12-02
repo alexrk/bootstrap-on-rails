@@ -1,0 +1,16 @@
+.row
+  .span8
+    %h2 Resend confirmation instructions
+
+    = simple_form_for(resource, :as => resource_name, :url => confirmation_path(resource_name), :html => { :method => :post, :class => "form-horizontal" }) do |f|
+      = f.error_notification
+
+      .form-inputs
+        = f.input :email, :required => true
+
+      .form-actions
+        = f.button :submit, "Resend confirmation instructions", :class => "btn-primary"
+        = link_to "Back", :back, :class => "btn"
+
+  .span4
+    = render "users/shared/links"

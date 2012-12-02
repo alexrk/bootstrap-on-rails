@@ -1,0 +1,20 @@
+// Use some mixins from compass
+.hero-unit {
+  @include clearfix();
+  @include background(linear-gradient(top, lighten(#394755, 10%), #394755));
+  color: white;
+  p {
+    text-align: justify;
+  }
+  .btn {
+    @include float-right();
+  }
+}
+
+.announces {
+  h2 {
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #308ccf;
+  }
+}
