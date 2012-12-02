@@ -1,1 +1,1 @@
-h1 BootstrapOnRails
+h1. BootstrapOnRails
